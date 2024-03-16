@@ -1,9 +1,9 @@
-@media screen and (min-width: 768px) {
-    .ms_sidebar, .ms_wrapper {
-        height: 100vh;
-        min-width: 280px;
-    } 
-
+.ms_sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    z-index: 1029;
 }
 
 .ms_circle {
@@ -22,3 +22,15 @@
     object-fit: cover;
     object-position: center;
 } 
+
+@media screen and (min-width: 768px) {
+    .ms_sidebar, .ms_wrapper {
+        height: 100vh;
+        min-width: 250px;
+    } 
+
+    .ms_sidebar {
+        position: static;
+    }
+
+}
