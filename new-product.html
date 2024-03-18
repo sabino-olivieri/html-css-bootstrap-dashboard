@@ -123,83 +123,73 @@
                 <!-- /titolo e descrizione -->
 
                 <form action="">
-                    <div class="row g-3 mt-5">
+                    <div class="row justify-content-center g-3 mt-5">
 
-                        <div class="col-12 col-lg-6">
+                        <div class="col-11 col-lg-7">
 
-                            <div class="row g-4">
+                            <div class="row g-2 align-items-center">
 
-                                <div class="row g-2 align-items-center mt-3">
-                                    <div class="col-12 col-md-3">
-                                        <label for="nome">Nome</label>
-                                    </div>
+                                <div class="col-12 col-md-3">
+                                    <label for="nome">Nome</label>
+                                </div>
 
-                                    <div class="col-12 col-md-9">
-                                        <input type="text" id="nome" placeholder="Samsung Galaxy S10 Plus"
-                                            class="form-control">
+                                <div class="col-12 mb-3 col-md-9 mb-md-0">
+                                    <input type="text" id="nome" placeholder="Samsung Galaxy S10 Plus"
+                                        class="form-control">
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    <label for="price">Prezzo</label>
+                                </div>
+
+                                <div class="col-12 mb-3 col-md-9 mb-md-0">
+                                    <input type="number" id="price" placeholder="99.00" class="form-control">
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    <label for="brand">Marca</label>
+                                </div>
+
+                                <div class="col-12 col-md-9">
+                                    <select class="form-select" aria-label="Default select example" id="brand">
+                                        <option selected>--- Seleziona ---</option>
+                                        <option value="1">Samsung</option>
+                                        <option value="2">Apple</option>
+                                        <option value="3">Xiaomi</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea class="form-control" id="description" rows="4"
+                                        aria-label="Inserire descrizione"
+                                        placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <input type="file" class="form-control" id="inputGroupFile02">
+                                        <label class="input-group-text" for="inputGroupFile02">Immagine</label>
                                     </div>
                                 </div>
 
+                                <div class="col-12">
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="status" id="available"
+                                            autocomplete="off" checked>
+                                        <label class="btn btn-outline-secondary" for="available">Disponibile</label>
 
+                                        <input type="radio" class="btn-check" name="status" id="spent"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="spent">Esaurito</label>
 
-                                <div class="row g-2 align-items-center">
-                                    <div class="col-12 col-md-3">
-                                        <label for="price">Prezzo</label>
-                                    </div>
+                                        <input type="radio" class="btn-check" name="status" id="out-of-production"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="out-of-production">Fuori
+                                            produzione</label>
 
-                                    <div class="col-12 col-md-9">
-                                        <input type="number" id="price" placeholder="99.00" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="row g-2 align-items-center">
-                                    <div class="col-12 col-md-3">
-                                        <label for="brand">Marca</label>
-                                    </div>
-
-                                    <div class="col-12 col-md-9">
-                                        <select class="form-select" aria-label="Default select example" id="brand">
-                                            <option selected>--- Seleziona ---</option>
-                                            <option value="1">Samsung</option>
-                                            <option value="2">Apple</option>
-                                            <option value="3">Xiaomi</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="row g-2 align-items-center">
-                                    <div class="col-12">
-                                        <textarea class="form-control" id="description" rows="4"
-                                            aria-label="Inserire descrizione"
-                                            placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <div class="input-group">
-                                            <input type="file" class="form-control" id="inputGroupFile02">
-                                            <label class="input-group-text" for="inputGroupFile02">Immagine</label>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-12">
-                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                            <input type="radio" class="btn-check" name="status" id="available"
-                                                autocomplete="off" checked>
-                                            <label class="btn btn-outline-secondary" for="available">Disponibile</label>
-    
-                                            <input type="radio" class="btn-check" name="status" id="spent"
-                                                autocomplete="off">
-                                            <label class="btn btn-outline-secondary" for="spent">Esaurito</label>
-    
-                                            <input type="radio" class="btn-check" name="status" id="out-of-production"
-                                                autocomplete="off">
-                                            <label class="btn btn-outline-secondary" for="out-of-production">Fuori
-                                                produzione</label>
-    
-                                            <input type="radio" class="btn-check" name="status" id="arriving"
-                                                autocomplete="off">
-                                            <label class="btn btn-outline-secondary" for="arriving">In arrivo</label>
-                                        </div>
+                                        <input type="radio" class="btn-check" name="status" id="arriving"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="arriving">In arrivo</label>
                                     </div>
                                 </div>
 
@@ -207,62 +197,67 @@
 
                         </div>
 
+                        <div class="col-11 col-lg-5">
 
-
-                        <div class="col-12 col-lg-6">
-
-                            <ul class="list-group ">
+                            <ul class="list-group">
 
                                 <li class="list-group-item">
-                                  <input class="form-check-input me-1" type="checkbox" value="" id="photo">
-                                  <label class="form-check-label w-75" for="photo">Fotocamera principale
-                                    <p class="text-secondary mb-0">foto di alta qualità e registrare video nitidi</p>
-                                  </label>
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="photo">
+                                    <label class="form-check-label w-75" for="photo">Fotocamera principale
+                                        <p class="text-secondary mb-0">foto di alta qualità e registrare video nitidi
+                                        </p>
+                                    </label>
                                 </li>
 
                                 <li class="list-group-item">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="oled">
                                     <label class="form-check-label w-75" for="oled">Schermo OLED
-                                      <p class="text-secondary mb-0">offre colori vividi per un'esperienza visiva straordinaria.</p>
+                                        <p class="text-secondary mb-0">offre colori vividi per un'esperienza visiva
+                                            straordinaria.</p>
                                     </label>
-                                  </li>
+                                </li>
 
-                                  <li class="list-group-item">
+                                <li class="list-group-item">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="cpu">
                                     <label class="form-check-label w-75" for="cpu">Processore Octa-core
-                                      <p class="text-secondary mb-0">prestazioni fluide e veloci per eseguire le applicazioni più esigenti.</p>
+                                        <p class="text-secondary mb-0">prestazioni fluide e veloci per eseguire le
+                                            applicazioni più esigenti.</p>
                                     </label>
-                                  </li>
+                                </li>
 
-                                  <li class="list-group-item">
+                                <li class="list-group-item">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="wireless">
                                     <label class="form-check-label w-75" for="wireless">Ricarica Wireless
-                                      <p class="text-secondary mb-0">consente di ricaricare lo smartphone comodamente senza l'uso di cavi.</p>
+                                        <p class="text-secondary mb-0">consente di ricaricare lo smartphone comodamente
+                                            senza l'uso di cavi.</p>
                                     </label>
-                                  </li>
+                                </li>
 
-                                  <li class="list-group-item">
+                                <li class="list-group-item">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="5g">
                                     <label class="form-check-label w-75" for="5g">Connessione 5G
-                                      <p class="text-secondary mb-0">Navigazione ultra veloce e streaming senza interruzini</p>
+                                        <p class="text-secondary mb-0">Navigazione ultra veloce e streaming senza
+                                            interruzini</p>
                                     </label>
-                                  </li>
+                                </li>
 
-                                  <li class="list-group-item">
+                                <li class="list-group-item">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="nfc">
                                     <label class="form-check-label w-75" for="nfc">Tecnologia NFC
-                                      <p class="text-secondary mb-0">per effettuare pagamenti senza contatto.</p>
+                                        <p class="text-secondary mb-0">per effettuare pagamenti senza contatto.</p>
                                     </label>
-                                  </li>
-                              </ul>
+                                </li>
+                            </ul>
 
+                        </div>
+
+                        <div class="col-11 col-lg-12">
+                            <button type="submit" class="btn btn-primary">Salva</button>
                         </div>
 
                     </div>
 
-                    <button type="submit" class="btn btn-primary mt-5">Salva</button>
                 </form>
-
             </div>
         </div>
 
