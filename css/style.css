@@ -23,6 +23,27 @@
     object-position: center;
 } 
 
+.ms_duration {
+    animation-duration: 1.2s;
+}
+
+.ms_size-1 {
+    animation-delay: 0.1s;
+}
+
+.ms_size-2 {
+    animation-delay: 0.2s;
+}
+
+.ms_size-3 {
+    animation-delay: 0.3s;
+}
+
+.ms_size-4 {
+    animation-delay: 0.4s;
+}
+
+
 @media screen and (min-width: 768px) {
     .ms_sidebar, .ms_wrapper {
         height: 100vh;
